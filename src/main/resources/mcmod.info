@@ -1,0 +1,15 @@
+[
+  {
+    "modid": "beeclient",
+    "name": "Bee Client",
+    "description": "Bee Client - Premium Minecraft 1.8.9 Client with 55+ Mods",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": ["Bee Client Team"],
+    "credits": "Bee Client",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
