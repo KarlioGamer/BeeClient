@@ -1,105 +1,105 @@
 # Bee Client
 
-Client utilitário para **Minecraft 1.8.9 (Forge 11.15.1.2318)**. Focado em melhorias de gameplay e conforto visual — sem módulos que alterem movimento, alcance ou pacotes enviados ao servidor.
+Utility client for **Minecraft 1.8.9 (Forge 11.15.1.2318)**. Focused on quality-of-life and visual comfort — no modules that alter movement, reach, or packets sent to the server.
 
-> Status: funcional no launcher de produção (registro via ForgeCoreMod). Todas as features são client-side e válidas em servidores com anti-cheat (GrimAC, etc.).
+> Status: works on the production launcher (registered via ForgeCoreMod). All features are client-side and valid on servers with anti-cheat (GrimAC, etc.).
 
 ---
 
-## 📦 Funcionalidades
+## 📦 Features
 
 ### Interface & HUD
-- **ClickGUI** completo com busca, abas por categoria, sliders e bind de teclas (menu: `Right Shift`)
-- Menu principal customizado (textura de fundo + logo)
-- Brand do client no HUD (canto superior direito, como a marca "vanilla")
-- HUD customizável: Keystrokes, CPS, FPS, Direção, Coordenadas, Ping, Potions, Armor, ArrayList, Watermark
-- Posições e estados **persistem entre sessões** (arquivo de config)
+- Full **ClickGUI** with search, category tabs, sliders and keybind rebinding (menu: `Right Shift`)
+- Custom main menu (background texture + logo)
+- Client brand on the HUD (top-right corner, like the "vanilla" tag)
+- Customizable HUD: Keystrokes, CPS, FPS, Direction, Coordinates, Ping, Potions, Armor, ArrayList, Watermark
+- Module states and settings **persist between sessions** (config file)
 
-### QoL / Jogabilidade
-- **ToggleSprint** e **ToggleSneak** — comportamento 100% vanilla via emulação de tecla física (sem flag em anti-cheat de simulação)
-- **NoHurtCam** — remove o tremor da câmera ao tomar dano (mantém o flash vermelho)
-- **Fullbright / ClearWater** — visibilidade sem efeito de poção no servidor
-- **Perspective** — câmera livre de 360°
+### Gameplay / QoL
+- **ToggleSprint** and **ToggleSneak** — 100% vanilla behavior via physical key emulation (no simulation flag on anti-cheat)
+- **NoHurtCam** — removes camera shake when taking damage (keeps the red flash)
+- **Fullbright / ClearWater** — visibility without a potion effect on the server
+- **Perspective** — 360° free camera
 - **AutoGG**, **ChatTriggers**, **AutoReconnect**, **Quickplay**, **TCPNoDelay**
-- **Discord Rich Presence** — status do jogo no Discord (RPC)
-- **ReachDisplay** — mostra a distância do último hit **real** (display apenas, medido contra o bounding box, sem alterar alcance)
+- **Discord Rich Presence** — in-game status on Discord (RPC)
+- **ReachDisplay** — shows the distance of your last **real** hit (display only, measured against the bounding box, no reach change)
 
-### Visual / Render
-- TimeChanger, ItemPhysicLite, ItemBlur, GlintColorizer, ShinyPots, ParticleCustomizer, ChromaHUD, ScrollableTooltips, SidebarRevamp, BetterThirdPerson, BossbarCustomizer, DamageIndicators, BlockOverlay, CrosshairMod, LevelHead, TNTTime, NameHistory, Colorido de poções
-
----
-
-## 🗂 Módulos
-
-| Categoria  | Módulos |
-|------------|---------|
-| Combat     | HitDelayFix, ReachDisplay |
-| Movement   | ToggleSprint, ToggleSneak, MouseDelayFix |
-| Render     | NoHurtCam, Fullbright, TimeChanger, ChromaHUD, Perspective, ItemPhysicLite, ItemBlur, BlockOverlay, BossbarCustomizer, GlintColorizer, ParticleCustomizer, ClearWater, ShinyPots, DamageIndicators, DirectionHUD, ScrollableTooltips, CrosshairMod, Keystrokes, ArmorHUD, PotionHUD, FPSDisplay, CPSDisplay |
-| Player     | CoordinatesHUD, PingDisplay, NameHistory, LevelHead, TNTTime, AutoGG, Quickplay, CompactChat, ChatTriggers, AutoReconnect |
-| HUD        | SidebarRevamp, BetterThirdPerson, Watermark, ArrayListHUD |
-| Misc       | DiscordRP, TCPNoDelay, InputLagFix, SoundPhysics, VanillaEnhancements, ReplayMod |
-
-### Teclas padrão
-| Tecla        | Função                     |
-|--------------|----------------------------|
-| `Right Shift`| Abrir o ClickGUI           |
-| `R`          | ToggleSprint               |
-| `C`          | ToggleSneak                |
-| `L`          | Perspective                |
+### Visual / Rendering
+- TimeChanger, ItemPhysicLite, ItemBlur, GlintColorizer, ShinyPots, ParticleCustomizer, ChromaHUD, ScrollableTooltips, SidebarRevamp, BetterThirdPerson, BossbarCustomizer, DamageIndicators, BlockOverlay, CrosshairMod, LevelHead, TNTTime, NameHistory, Potion highlight
 
 ---
 
-## 🚀 Instalação
+## 🗂 Modules
 
-1. Tenha o Minecraft **1.8.9 Forge 11.15.1.2318** instalado no launcher.
-2. Copie `BeeClient-1.0.jar` para a pasta de mods:
+| Category | Modules |
+|----------|---------|
+| Combat   | HitDelayFix, ReachDisplay |
+| Movement | ToggleSprint, ToggleSneak, MouseDelayFix |
+| Render   | NoHurtCam, Fullbright, TimeChanger, ChromaHUD, Perspective, ItemPhysicLite, ItemBlur, BlockOverlay, BossbarCustomizer, GlintColorizer, ParticleCustomizer, ClearWater, ShinyPots, DamageIndicators, DirectionHUD, ScrollableTooltips, CrosshairMod, Keystrokes, ArmorHUD, PotionHUD, FPSDisplay, CPSDisplay |
+| Player   | CoordinatesHUD, PingDisplay, NameHistory, LevelHead, TNTTime, AutoGG, Quickplay, CompactChat, ChatTriggers, AutoReconnect |
+| HUD      | SidebarRevamp, BetterThirdPerson, Watermark, ArrayListHUD |
+| Misc     | DiscordRP, TCPNoDelay, InputLagFix, SoundPhysics, VanillaEnhancements, ReplayMod |
+
+### Default keys
+| Key          | Action          |
+|--------------|-----------------|
+| `Right Shift`| Open the ClickGUI |
+| `R`          | ToggleSprint    |
+| `C`          | ToggleSneak     |
+| `L`          | Perspective     |
+
+---
+
+## 🚀 Installation
+
+1. Have **Minecraft 1.8.9 Forge 11.15.1.2318** installed in the launcher.
+2. Copy `BeeClient-1.0.jar` to the mods folder:
    ```
    %APPDATA%\.minecraft\mods\BeeClient-1.0.jar
    ```
-3. Inicie o jogo e abra o menu com `Right Shift`.
+3. Launch the game and open the menu with `Right Shift`.
 
-> Apenas o client precisa do arquivo — o arquivo final já embute todas as dependências (Discord RPC + SLF4J).
+> Only the client jar is needed — the final file already bundles all dependencies (Discord RPC + SLF4J).
 
 ---
 
-## 🔨 Build (para desenvolvedores)
+## 🔨 Build (for developers)
 
-Requisitos: **JDK 8** e **Gradle 4.5**.
+Requirements: **JDK 8** and **Gradle 4.5**.
 
 ```powershell
 $env:JAVA_HOME = "C:\Program Files\Android\jdk\jdk-8.0.302.8-hotspot\jdk8u302-b08"
 gradle clean build
 ```
 
-Saída: `build/libs/BeeClient-1.0.jar` (jar único com dependências embutidas e reobfuscado).
+Output: `build/libs/BeeClient-1.0.jar` (single jar with bundled dependencies, reobfuscated).
 
 ---
 
-## ⚙️ Configuração
+## ⚙️ Configuration
 
-O estado dos módulos (ativado/desativado, teclas e settings) é salvo automaticamente em:
+Module state (enabled/disabled, keybinds and settings) is saved automatically to:
 
 ```
 %APPDATA%\.minecraft\beeclient\config.json
 ```
 
-- Salvo ao: trocar estado/tecla de um módulo, soltar o mouse no ClickGUI e ao fechar o jogo.
-- Carregado no init do client — não precisa reativar nada entre sessões.
+- Saved when: toggling a module or keybind, releasing the mouse in the ClickGUI, and on game shutdown.
+- Loaded at client init — nothing needs to be re-enabled between sessions.
 
 ---
 
-## 🧩 Arquitetura
+## 🧩 Architecture
 
-- **`com.beeclient.core.BeeClientLaunchPlugin`** — `IFMLLoadingPlugin` que registra o mod via `getModContainerClass()` (necessário porque o `sklauncher-fx.jar` do launcher quebra o discovery por `@Mod`).
-- **`com.beeclient.core.BeeClientModContainer`** — `DummyModContainer` que fornece o `getSource()` ao Forge (necessário para resource packs).
-- **`com.beeclient.render.TextureLoader`** — carregamento direto de PNGs do classpath via `ImageIO` + `GlStateManager.bindTexture` (contorna resource packs ausentes; evita dessync do cache de textura que causa glyphs corrompidos).
-- **`com.beeclient.config.ConfigManager`** — persistência JSON via Gson (embutido no MC).
-- **Sem Mixin** — o build não inclui Mixin/SpongePowered (quebra no classloader do launcher em produção).
+- **`com.beeclient.core.BeeClientLaunchPlugin`** — `IFMLLoadingPlugin` that registers the mod via `getModContainerClass()` (required because the launcher's `sklauncher-fx.jar` breaks `@Mod`-based discovery).
+- **`com.beeclient.core.BeeClientModContainer`** — `DummyModContainer` providing `getSource()` to Forge (needed for resource packs).
+- **`com.beeclient.render.TextureLoader`** — direct PNG loading from the classpath via `ImageIO` + `GlStateManager.bindTexture` (bypasses missing resource packs; avoids texture-cache desync that causes corrupted glyphs).
+- **`com.beeclient.config.ConfigManager`** — JSON persistence via Gson (shipped with MC).
+- **No Mixin** — the build does not include Mixin/SpongePowered (breaks on the launcher's classloader in production).
 
 ---
 
-## ⚠️ Notas
+## ⚠️ Notes
 
-- `HitDelayFix`, `MouseDelayFix` e outros módulos "stub" são placeholders de QoL, sem efeito runtime.
-- O mod **não** estende reach nem velocidade; any "simulation" flag em anti-cheat deve ser reportada como bug (o ToggleSprint/Sneak usam a tecla física do vanilla para evitar desync).
+- `HitDelayFix`, `MouseDelayFix` and other "stub" modules are QoL placeholders with no runtime effect.
+- The mod does **not** extend reach or speed; any "simulation" flag on anti-cheat should be reported as a bug (ToggleSprint/Sneak use the vanilla physical key to avoid desync).
